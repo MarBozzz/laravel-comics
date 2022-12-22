@@ -65,10 +65,144 @@ header {
     }
 }
 
+.jumbotron {
+    height: 400px;
+    background-image: url(../img/jumbotron.jpg);
+}
+.current-series {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 55px;
+    background-color: #0282F9;
+    position: absolute;
+    top: 495px;
+    left: 320px;
+    &:hover {
+        border: 2px solid #0282F9;
+        background-color: white;
+        color: #0282F9;
+        a {
+          color: #0282F9;
+        }
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 666px;
+    background-color: #1C1C1C;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+}
+
+.card {
+    width: calc(100% / 6 - 20px);
+    margin: 10px;
+    height: 240px;
+    padding-top: 45px;
+    &:hover {
+      cursor: pointer;
+    }
+    .img-container {
+      height: 185px;
+      width: 100%;
+      overflow-y: hidden;
+      margin-bottom: 20px;
+      &:hover {
+      border: 2px solid white;
+    }
+    }
+    span {
+      text-transform: uppercase;
+      font-size: .8rem;
+      display: inline-block;
+      &:hover {
+      transform: scale(1.05);
+    }
+    }
+}
+
+.load-more {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 185px;
+height: 35px;
+background-color: #0282F9;
+margin-bottom: 20px;
+&:hover {
+    border: 2px solid #0282F9;
+    background-color: white;
+    color: #0282F9;
+    a {
+        color: #0282F9;
+    }
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: .8rem;
+    font-weight: bold;
+}
+}
+section {
+height: 155px;
+background-color: #0282F9;
+.container {
+    height: 100%;
+    nav {
+    height: 100%;
+    ul {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        &:hover {
+            transform: scale(1.05);
+        }
+        .image {
+            img {
+            height: 50px;
+            }
+        }
+        span {
+            color: white;
+            text-transform: uppercase;
+            font-size: .9rem;
+            padding-left: 1rem;
+        }
+        }
+    }
+    }
+}
+}
+
 footer {
     .upper-footer {
       height: 370px;
-      background-image: url(../assets/img/footer-bg.jpg);
+      background-image: url(../img/footer-bg.jpg);
       background-size: cover;
       .container {
         display: flex;
